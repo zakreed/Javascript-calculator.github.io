@@ -41,7 +41,7 @@ body{
     place-items: center;
 }
 
-.keypad div > button {
+.keypad div > button:not(.equals) {
     width: 75px;
     height: 75px;
     border: none;
@@ -52,7 +52,7 @@ body{
     transition-duration: 0.4s;
 }
 
-.keypad div > button:hover {
+.keypad div > button:hover:not(.equals) {
     background-color: #E5E5E5;
 }
 
@@ -75,6 +75,17 @@ body{
 }
 
 .equals {
-    color: #F0F0F0;
+    width: 75px;
+    height: 75px;
+    border: none;
+    color: #E5E5E5;
     background-color: #9B59B6;
+    border-radius: 50%;
+    font-size: 48px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.equals:hover {
+    background-color: #8E44AD;
 }
