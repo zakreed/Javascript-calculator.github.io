@@ -32,27 +32,22 @@ body{
     justify-content: center;
     width: 500px;
     height: 625px;
+    column-gap: 10%;
+    align-items: center;
 }
 
-.keypad > div {
-    width: 125px;
-    height: 125px;
-    display: grid;
-    place-items: center;
-}
-
-.keypad div > button:not(.equals) {
+.keypad > button {
     width: 75px;
     height: 75px;
-    border: none;
-    background-color: #F0F0F0;
+    place-items: center;
     border-radius: 50%;
+    border: none;
     font-size: 48px;
-    cursor: pointer;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-.keypad div > button:hover:not(.equals) {
+.keypad > button:hover:not(.equals){
     background-color: #E5E5E5;
 }
 
