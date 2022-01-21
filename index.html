@@ -3,38 +3,38 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+
 </head>
 
 <body>
     <div class='calculator'>
         <div class='display'>
-            <p class='history'>21*12</p>
-            <p class='result'>6093</p>
+            <p id='history' class='history'>...</p>
+            <p id='result' class='result'></p>
         </div>
         <div class='keypad'>
-            <button class='operatorSmall button'>CE</button>
-            <button class='operatorSmall button'>C</button>
-            <button class='operatorSmall button'>%</button>
-            <button class='operator button'>&#43;</button>
-            <button class='button'>7</button>
-            <button class='button'>8</button>
-            <button class='button'>9</button>
-            <button class='operator button'>&#45;</button>
-            <button class='button'>4</button>
-            <button class='button'>5</button>
-            <button class='button'>6</button>
-            <button class='operator button'>&#215;</button>
-            <button class='button'>1</button>
-            <button class='button'>2</button>
-            <button class='button'>3</button>
-            <button class='operator button'>&#xF7;</button>
-            <button class='button'>0</button>
+            <button id='CE' class='operatorSmall button'>CE</button>
+            <button id='C'class='operatorSmall button'>C</button>
+            <button id='%'class='operatorSmall button history_log'>%</button>
+            <button id='+'class='operator button history_log'>&#43;</button>
+            <button id='7' class='button history_log'>7</button>
+            <button id='8' class='button history_log'>8</button>
+            <button id='9' class='button history_log'>9</button>
+            <button id='-' class='operator button history_log'>&#45;</button>
+            <button id='4' class='button history_log'>4</button>
+            <button id='5' class='button history_log'>5</button>
+            <button id='6' class='button history_log'>6</button>
+            <button id='*'class='operator button history_log'>&#215;</button>
+            <button id='1' class='button history_log'>1</button>
+            <button id='2' class='button history_log'>2</button>
+            <button id='3' class='button history_log'>3</button>
+            <button id='/'class='operator button history_log'>&#xF7;</button>
+            <button id='0' class='button history_log'>0</button>
             <div></div>
-            <button class='button'>.</button>
-            <button class='equals button'>=</button>
+            <button id='.'class='button history_log'>.</button>
+            <button id='='class='equals button'>=</button>
         </div>
-    </div>
     </div>
 </body>
 
